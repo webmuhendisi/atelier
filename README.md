@@ -99,3 +99,7 @@ Admin paneline sadece giriş yapılmışsa erişim
 Mobil uyumlu tasarım şart.
 
 Kurs ücretleri zamanla değişebilir: admin panelinden düzenlenebilir yapılabilir.
+
+## Kurulum
+1. `composer install` ile bağımlılıkları yükleyin.
+2. `php -S localhost:8000` komutu ile yerel sunucuyu başlatın.
