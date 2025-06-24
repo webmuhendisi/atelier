@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Paneli - Atelier Arkın</title>
+    <meta name="robots" content="noindex">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-blue-900 text-white p-4 shadow">
+            <div class="container mx-auto flex justify-between items-center">
+                <h1 class="text-xl font-bold">Admin Paneli</h1>
+                <a href="/" class="underline">Siteye Dön</a>
+            </div>
+        </header>
+        <main class="flex-grow container mx-auto py-8">
+            <h2 class="text-2xl font-semibold mb-6">Başvurular</h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white shadow-lg rounded-lg">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="py-2 px-4">İsim</th>
+                            <th class="py-2 px-4">E-posta</th>
+                            <th class="py-2 px-4">Program</th>
+                            <th class="py-2 px-4">Tarih</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-2 px-4">Örnek İsim</td>
+                            <td class="py-2 px-4">email@example.com</td>
+                            <td class="py-2 px-4">Profesyonel</td>
+                            <td class="py-2 px-4">01/01/2023</td>
+                        </tr>
+                        <!-- Diğer başvurular buraya eklenecek -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer class="bg-blue-900 text-white text-center p-4">
+            © 2023 Atelier Arkın
+        </footer>
+    </div>
+</body>
+</html>
