@@ -99,3 +99,6 @@ Admin paneline sadece giriş yapılmışsa erişim
 Mobil uyumlu tasarım şart.
 
 Kurs ücretleri zamanla değişebilir: admin panelinden düzenlenebilir yapılabilir.
+
+## Tailwind CSS Tasarim
+Proje altinda `public/index.html` ve `admin/index.html` dosyalari Tailwind CSS ile hazirlanmis ornek sayfalardir. Baslik ve baglantilar SEO uyumlu olacak sekilde duzenlenmistir.

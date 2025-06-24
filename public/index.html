@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier Arkın Eğitim Platformu</title>
+    <meta name="description" content="Profesyonel ve amatör aşçılık eğitimleri için modern platform">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-gray-50 font-sans text-gray-900">
+    <header class="bg-blue-800 text-white">
+        <nav class="container mx-auto flex items-center justify-between p-4">
+            <a href="/" class="text-xl font-bold">Atelier Arkın</a>
+            <div class="space-x-4">
+                <a href="#egitimler" class="hover:underline">Eğitimler</a>
+                <a href="#basvuru" class="hover:underline">Başvur</a>
+                <a href="#iletisim" class="hover:underline">İletişim</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="bg-cover bg-center h-screen text-center flex flex-col justify-center" style="background-image: url('https://source.unsplash.com/1600x900/?cooking');">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg animate-pulse">Profesyonel Aşçılık Eğitimleri</h1>
+            <p class="mt-4 text-lg text-gray-200">Hayalinizdeki kariyere bizimle başlayın</p>
+            <a href="#basvuru" class="mt-8 inline-block bg-yellow-500 text-white py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 transition-colors">Hemen Başvur</a>
+        </section>
+        <section id="egitimler" class="container mx-auto py-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Eğitim Programları</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-4">Profesyonel Aşçılık</h3>
+                    <p>Eğitim süresi, ücreti ve kapsamlı müfredat ile kariyerinize yön verin.</p>
+                    <a href="#basvuru" class="mt-4 inline-block text-blue-700 hover:underline">Detaylar</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-4">Amatör Aşçılık</h3>
+                    <p>Hobi olarak aşçılıkla ilgilenmek isteyenler için keyifli bir başlangıç.</p>
+                    <a href="#basvuru" class="mt-4 inline-block text-blue-700 hover:underline">Detaylar</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-transform">
+                    <h3 class="text-xl font-semibold mb-4">Amatör Pastacılık</h3>
+                    <p>Tatlı, kek ve kurabiye yapımının inceliklerini öğrenin.</p>
+                    <a href="#basvuru" class="mt-4 inline-block text-blue-700 hover:underline">Detaylar</a>
+                </div>
+            </div>
+        </section>
+        <section id="basvuru" class="bg-gray-100 py-16">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8">Başvuru Formu</h2>
+                <form class="max-w-xl mx-auto space-y-4" action="/apply" method="POST">
+                    <input type="text" name="name" class="w-full border border-gray-300 p-3 rounded" placeholder="Ad Soyad" required>
+                    <input type="email" name="email" class="w-full border border-gray-300 p-3 rounded" placeholder="E-posta" required>
+                    <input type="tel" name="phone" class="w-full border border-gray-300 p-3 rounded" placeholder="Telefon" required>
+                    <select name="program" class="w-full border border-gray-300 p-3 rounded" required>
+                        <option value="profesyonel">Profesyonel Aşçılık</option>
+                        <option value="amator">Amatör Aşçılık</option>
+                        <option value="pastacilik">Amatör Pastacılık</option>
+                    </select>
+                    <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-800 transition-colors">Başvuruyu Gönder</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="iletisim" class="bg-blue-800 text-white py-8">
+        <div class="container mx-auto text-center space-y-2">
+            <p>© 2023 Atelier Arkın. Tüm hakları saklıdır.</p>
+            <p>İletişim: <a href="mailto:info@atelierarkin.com" class="underline">info@atelierarkin.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
